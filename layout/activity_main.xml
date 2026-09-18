@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#1B2631">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#243342">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="Ảnh sinh viên" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvStudentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DCE6EB"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DCE6EB"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DCE6EB"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvGpaBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34B469"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/edtNewGpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập GPA mới (0.0 - 4.0)"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAB7B8"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnUpdateGpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cập Nhật Thông Tin"
+                android:backgroundTint="#34B469"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
